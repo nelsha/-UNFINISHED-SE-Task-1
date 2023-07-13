@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nels Diaries</title>
+  <link rel="stylesheet" href="profilepage.css">
+  <link 
+  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="">Nels Diaries</a></div>
+      <ul class="links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="diarypage.html">Diaries</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+      <input class="search-bar" type="text" placeholder="Search...">
+      <a href="profilepage.html" class="action_btn">About Me</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="diarypage.html">Diaries</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="profilepage.html" class="action_btn">About Me</a></li>
+    </div>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDrownMenu = document.querySelector('.dropdown_menu')
+  
+      toggleBtn.onclick = function () {
+        dropDrownMenu.classList.toggle('open')
+        const isOpen = dropDrownMenu.classList.contains('open')
+  
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+      }
+    </script>
+
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+      crossorigin="anonymous">
+    </script>
+  </header>
+
+  <main>
+    <section id="Profile" class="cardd">
+      <div class="cardd">
+        <div class="banner">
+          <div class="imgBox">
+            <img 
+            src="./1684057207970[962] 1.jpg" 
+            alt="">
+          </div>
+        </div>
+  
+        <div class="cardd-body">
+          <div class="menu">
+            <ion-icon name="ellipsis-vertical"></ion-icon>
+          </div>
+  
+          <h2 class="name">Naila Shakira Putrindari</h2>
+          <div class="email">shakira.putrindari@gmail.com</div>
+  
+          <div class="desc">
+            An Information Systems student from University of Indonesia 
+            who currently experiencing their first year. Naila have a big 
+            interest in technology especially in the cyber security field.
+          </div>
+        </div>
+
+        <script 
+        type="module" 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+      <script 
+        nomodule 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+      </div>
+    </section>
+  
+
+  </main>
+</body>
+
+</html>
